@@ -42,6 +42,64 @@
           </array>
         </dict>
       </array>
+	  
+      <config-file target="*-Info.plist" parent="CFBundleDocumentTypes" overwrite="true">
+          <array>
+              <dict>
+                  <key>CFBundleTypeExtensions</key>
+                  <array>
+                      <string>nwfmticket</string>
+                  </array>
+                  <key>CFBundleTypeMIMETypes</key>
+                  <array>
+                      <string>
+                          application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                      </string>
+                  </array>
+                  <key>CFBundleTypeName</key>
+                  <string>NWFM Ticket</string>
+                  <key>CFBundleTypeOSTypes</key>
+                  <array>
+                      <string>nwfmticket</string>
+                  </array>
+                  <key>CFBundleTypeRole</key>
+                  <string>Viewer</string>
+                  <key>LSItemContentTypes</key>
+                  <array>
+                      <string>com.3bsoft.nwfm.nwfmticket</string>
+                  </array>
+                  <key>LSTypeIsPackage</key>
+                  <false/>
+                  <key>NSDocumentClass</key>
+                  <string>LSDocument</string>
+              </dict>
+          </array>
+      </config-file>
+    
+      <config-file target="*-Info.plist" parent="UTExportedTypeDeclarations" overwrite="true">
+          <array>
+              <dict>
+                  <key>UTTypeConformsTo</key>
+                  <array>
+                      <string>public.data</string>
+                  </array>
+                  <key>UTTypeDescription</key>
+                  <string>nwfm xlsx document</string>
+                  <key>UTTypeIdentifier</key>
+                  <string>com.3bsoft.nwfm.nwfmticket</string>
+                  <key>UTTypeTagSpecification</key>
+                  <dict>
+                      <key>public.filename-extension</key>
+                      <array>
+                          <string>nwfmticket</string>
+                      </array>
+                      <key>public.mime-type</key>
+                      <string>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</string>
+                  </dict>
+              </dict>
+          </array>
+      </config-file>
+    
     </config-file>
   </platform>
 
