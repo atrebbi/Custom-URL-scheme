@@ -42,13 +42,14 @@
           </array>
         </dict>
       </array>
-	  
+     </config-file>	  
+	 
       <config-file target="*-Info.plist" parent="CFBundleDocumentTypes" overwrite="true">
           <array>
               <dict>
                   <key>CFBundleTypeExtensions</key>
                   <array>
-                      <string>nwfmticket</string>
+                      <string>$URL_SCHEME</string>
                   </array>
                   <key>CFBundleTypeMIMETypes</key>
                   <array>
@@ -66,7 +67,7 @@
                   <string>Viewer</string>
                   <key>LSItemContentTypes</key>
                   <array>
-                      <string>com.3bsoft.nwfm.nwfmticket</string>
+                      <string>com.3bsoft.nwfm.$URL_SCHEME</string>
                   </array>
                   <key>LSTypeIsPackage</key>
                   <false/>
@@ -86,7 +87,7 @@
                   <key>UTTypeDescription</key>
                   <string>nwfm xlsx document</string>
                   <key>UTTypeIdentifier</key>
-                  <string>com.3bsoft.nwfm.nwfmticket</string>
+                  <string>com.3bsoft.nwfm.$URL_SCHEME</string>
                   <key>UTTypeTagSpecification</key>
                   <dict>
                       <key>public.filename-extension</key>
@@ -100,7 +101,6 @@
           </array>
       </config-file>
     
-    </config-file>
   </platform>
 
   <!-- android -->
